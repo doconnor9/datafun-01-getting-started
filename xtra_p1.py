@@ -7,12 +7,12 @@ import random
 
 # Change the name below to a name of your choice
 
-name = "GameBot"
+name = "Bob"
 
 # Fix the code below to print the name using an f-string
 
 print()
-print("Hello, I'm {name}, your gamebot.")
+print(f"Hello, I'm {name}, your gamebot.")
 print("Let's play an animal guessing game!")
 print("There are 3 animals: wolf, eagle, snake (a Python of course).")
 print("The wolf scares the eagle.")
@@ -26,7 +26,7 @@ print()
 # enter wolf, eagle, or snake.
 # Hint: use the input() function
 
-user_choice = "wolf"
+user_choice = input('Which animal do you pick? ')
 
 # Now the bot will pick one
 buddy_choice = random.choice(["wolf", "eagle", "snake"])
