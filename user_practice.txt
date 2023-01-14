@@ -19,3 +19,538 @@ hello
 >>> print( min (a, b))
 3
 >>> 
+
+
+Chapter 2 practice (2.2-2.6)
+
+In [1]: 45 + 72
+Out[1]: 117
+
+In [2]: x = 7
+
+In [3]: y = 3
+
+In [4]: x + y
+Out[4]: 10
+
+In [5]: total = x + y
+
+In [6]: total
+Out[6]: 10
+
+In [7]: type(x)
+Out[7]: int
+
+In [8]: type(10.5)
+Out[8]: float
+
+In [9]: 10.8 + 12.2 + 0.2
+Out[9]: 23.2
+
+In [10]: total = 10.8 + 12.2 + 0.2
+
+In [11]: total
+Out[11]: 23.2
+
+
+
+In [1]: 7 * 4
+Out[1]: 28
+
+In [2]: 2 ** 10
+Out[2]: 1024
+
+In [3]: 3 ** 3
+Out[3]: 27
+
+In [4]: 7 / 4
+Out[4]: 1.75
+
+In [5]: 7 // 4
+Out[5]: 1
+
+In [6]: 3 / 5
+Out[6]: 0.6
+
+In [7]: 3 // 5
+Out[7]: 0
+
+In [8]: 14 / 7
+Out[8]: 2.0
+
+In [9]: 14 // 7
+Out[9]: 2
+
+In [10]: -13 / 4
+Out[10]: -3.25
+
+In [11]: -13 // 4
+Out[11]: -4
+
+In [12]: 123 / 0
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+Cell In[12], line 1
+----> 1 123 / 0
+
+ZeroDivisionError: division by zero
+
+In [13]: 123 // 0
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+Cell In[13], line 1
+----> 1 123 // 0
+
+ZeroDivisionError: integer division or modulo by zero
+
+In [14]: z + 7
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[14], line 1
+----> 1 z + 7
+
+NameError: name 'z' is not defined
+
+In [15]: 17 % 5
+Out[15]: 2
+
+In [16]: 7.5 / 3.5
+Out[16]: 2.142857142857143
+
+In [17]: 7.5 % 3.5
+Out[17]: 0.5
+
+In [18]: 10 * (5 + 3)
+Out[18]: 80
+
+In [19]: 10 * 5 + 3
+Out[19]: 53
+
+In [20]: 3 * (4 + 5)
+Out[20]: 27
+
+In [21]: 3 * 4 + 5
+Out[21]: 17
+
+In [22]: 4 ** 3 ** 2
+Out[22]: 262144
+
+In [23]: (4 ** 3) ** 2
+Out[23]: 4096
+
+In [24]: 4 ** (3 ** 2)
+Out[24]: 262144
+
+In [25]: print('Welcome to Python')
+Welcome to Python
+
+In [26]: print("Welcome to Python")
+Welcome to Python
+
+In [27]: print('Welcome', 'To', 'Python')
+Welcome To Python
+
+In [28]: print('Welcome\nto\n\nPython')
+Welcome
+to
+
+Python
+
+In [29]: print('this is a longer string, so we\ split it over two lines')
+this is a longer string, so we\ split it over two lines
+
+In [30]: print('this is a longer string, so we \ split it over two lines')
+this is a longer string, so we \ split it over two lines
+
+In [31]: print('this is a longer string, so we \split it over two lines')
+this is a longer string, so we \split it over two lines
+
+In [32]: print('this is a longer string, so we \
+    ...: split it over two lines
+    ...: ')
+  Cell In[32], line 2
+    split it over two lines
+                           
+^
+SyntaxError: EOL while scanning string literal
+
+
+In [33]: print('this is a longer string, so we \
+    ...: split it over two lines')
+this is a longer string, so we split it over two lines
+
+In [34]: print('this is a longer string, so we\
+    ...: split it over two lines')
+this is a longer string, so wesplit it over two lines
+
+In [35]: print('this is a longer string, so we\
+    ...:  spilt it over two lines')
+this is a longer string, so we spilt it over two lines
+
+In [36]: print('Sum is', 7 + 3)
+Sum is 10
+
+In [37]: print('sum is', 7 + 3)
+sum is 10
+
+In [38]: print('sum is' 7 + 3)
+  Cell In[38], line 1
+    print('sum is' 7 + 3)
+                   ^
+SyntaxError: invalid syntax
+
+
+In [39]: print("word")
+word
+
+In [40]: print('word')
+word
+
+In [41]: type('word')
+Out[41]: str
+
+In [42]: type('7')
+Out[42]: str
+
+In [43]: type(7)
+Out[43]: int
+
+In [44]: type(4.5)
+Out[44]: float
+
+In [45]: type('5')
+Out[45]: str
+
+In [46]: print('int(5.2)', 'truncates 5.2 to', int(5.2))
+int(5.2) truncates 5.2 to 5
+
+In [47]: print('displey "hi" in quotes')
+displey "hi" in quotes
+
+In [48]: print("display 'hi' in quotes")
+display 'hi' in quotes
+
+In [49]: print('display 'hi' in quotes')
+  Cell In[49], line 1
+    print('display 'hi' in quotes')
+                    ^
+SyntaxError: invalid syntax
+
+
+In [50]: print('display \'hi\' in quotes')
+display 'hi' in quotes
+
+In [51]: print("Display the name O'Brian")
+Display the name O'Brian
+
+In [52]: print('display the name O'Brian')
+  Cell In[52], line 1
+    print('display the name O'Brian')
+                              ^
+SyntaxError: invalid syntax
+
+
+In [53]: print("display \"hi\" in quotes")
+display "hi" in quotes
+
+In [54]: print("""display "hi" and 'bye' in quotes""")
+display "hi" and 'bye' in quotes
+
+In [55]: print("""display "hi" and 'bye' for O'Brian in quotes""")
+display "hi" and 'bye' for O'Brian in quotes
+
+In [56]: triple_quoted_string = """This is a triple-quoted
+    ...: string that spans two line"""
+
+In [57]: print(triple_quoted_sring)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[57], line 1
+----> 1 print(triple_quoted_sring)
+
+NameError: name 'triple_quoted_sring' is not defined
+
+In [58]: print(triple_quoted_string)
+This is a triple-quoted
+string that spans two line
+
+In [59]: triple_quoted_string
+Out[59]: 'This is a triple-quoted\nstring that spans two line'
+
+In [60]: print("This is a triple-quoted \n string that spans two lines")
+This is a triple-quoted 
+ string that spans two lines
+
+In [61]: print("This is a triple-quoted \nstring that spans two lines")
+This is a triple-quoted 
+string that spans two lines
+
+In [62]: triple_quoted_stringsingle = '''This is a triple-quoted
+    ...: string that spans two lines'''
+
+In [63]: print(triple_quoted_stringsingle
+    ...: 
+    ...: )
+This is a triple-quoted
+string that spans two lines
+
+In [64]: triple_quoted_stringsingle
+Out[64]: 'This is a triple-quoted\nstring that spans two lines'
+
+In [65]: print('This is a triple-quoted \nstring that spans two line')
+This is a triple-quoted 
+string that spans two line
+
+In [66]: triple_quoted_stringDS = """This is a triple-quoted
+    ...: string that spans two lines for O'Brian""")
+    ...: 
+    ...: """
+    ...: 
+In [66]: triple-quoted_stringDS = """This is a triple quoted "string"
+    ...: that spans two lines for O'Brian"""
+  Cell In[66], line 1
+    triple-quoted_stringDS = """This is a triple quoted "string"
+    ^
+SyntaxError: cannot assign to operator
+
+
+In [67]: triple_quoted_stringDS = """This is a triple quoted "string"
+    ...: that spans two lines for O'Brian"""
+
+In [68]: print(triple_quoted_stringDS)
+This is a triple quoted "string"
+that spans two lines for O'Brian
+
+In [69]: triple_quoted_string
+Out[69]: 'This is a triple-quoted\nstring that spans two line'
+
+In [70]: triple_quoted_stringDS
+Out[70]: 'This is a triple quoted "string"\nthat spans two lines for O\'Brian'
+
+In [71]: print('This is a triple quoted "string" \nthat spans two lines for O\'Brian')
+This is a triple quoted "string" 
+that spans two lines for O'Brian
+
+In [72]: print("""This is a lengthy multiline string containing a few lines \ of text""")
+This is a lengthy multiline string containing a few lines \ of text
+
+In [73]: print("""This is a lengthy
+    ...: multiline string containing
+    ...: a few lines \
+    ...: of text""")
+This is a lengthy
+multiline string containing
+a few lines of text
+
+In [74]: print("""this is a long line so I will \
+    ...: put it on multiple lines \
+    ...: to make it easier to read""")
+this is a long line so I will put it on multiple lines to make it easier to read
+
+In [75]: name = input("What's your name?")
+What's your name? Diandra
+
+In [76]: name
+Out[76]: ' Diandra'
+
+In [77]: print(name)
+ Diandra
+
+In [78]: name = input("What's your name?")
+What's your name? 'Diandra'
+
+In [79]: name
+Out[79]: " 'Diandra'"
+
+In [80]: print(name)
+ 'Diandra'
+
+In [81]: name = ('What\'s your name')
+
+In [82]: name = input('What\'s your name?')
+What's your name?Diandra
+
+In [83]: name
+Out[83]: 'Diandra'
+
+In [84]: 
+
+In [84]: name = input("What's your name? ")
+What's your name? O'Connor
+
+In [85]: name
+Out[85]: "O'Connor"
+
+In [86]: print(name)
+O'Connor
+
+In [87]: value1 = input("enter first number: ")
+enter first number: 7
+
+In [88]: value2 = input("enter second number: ")
+enter second number: 3
+
+In [89]: value1 + value2
+Out[89]: '73'
+
+In [90]: value = input("enter an integer: ")
+enter an integer: 7
+
+In [91]: another_value = input("enter another integer: ")
+enter another integer: 3
+
+In [92]: value + another_value
+Out[92]: '73'
+
+In [93]: 
+
+In [93]: value = int(value)
+
+In [94]: value
+Out[94]: 7
+
+In [95]: another_value = int(another_value)
+
+In [96]: value + another_value
+Out[96]: 10
+
+In [97]: another_value2 = int(input("enter an integer: ")
+    ...: )
+enter an integer: 10
+
+In [98]: another_value2
+Out[98]: 10
+
+In [99]: another_value
+Out[99]: 3
+
+In [100]: another_value * another_value2
+Out[100]: 30
+
+In [101]: bad_value = int(input("enter another integer: "))
+enter another integer: two
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+Cell In[101], line 1
+----> 1 bad_value = int(input("enter another integer: "))
+
+ValueError: invalid literal for int() with base 10: 'two'
+
+In [102]: int(10.5)
+Out[102]: 10
+
+In [103]: int(10.7)
+Out[103]: 10
+
+In [104]: int(10.3287523)
+Out[104]: 10
+
+In [105]: number_one = input("enter a number)
+  Cell In[105], line 1
+    number_one = input("enter a number)
+                                       ^
+SyntaxError: EOL while scanning string literal
+
+
+In [106]: first_number = input("enter a number: ")
+enter a number: 3.5386
+
+In [107]: first_number
+Out[107]: '3.5386'
+
+In [108]: second_number = input ("enter second number: ")
+enter second number: 7.1
+
+In [109]: second_number
+Out[109]: '7.1'
+
+In [110]: first_number + second_number
+Out[110]: '3.53867.1'
+
+In [111]: first_number * second_number
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[111], line 1
+----> 1 first_number * second_number
+
+TypeError: can't multiply sequence by non-int of type 'str'
+
+In [112]: first_number = int(first_number)
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+Cell In[112], line 1
+----> 1 first_number = int(first_number)
+
+ValueError: invalid literal for int() with base 10: '3.5386'
+
+In [113]: first_number = float(first_number)
+
+In [114]: first_number
+Out[114]: 3.5386
+
+In [115]: second_number = float(second_number)
+
+In [116]: second_number
+Out[116]: 7.1
+
+In [117]: first_number + second_number
+Out[117]: 10.6386
+
+In [118]: first_number / second_number
+Out[118]: 0.49839436619718314
+
+In [119]: first_number // second_number
+Out[119]: 0.0
+
+In [120]: int(first_number)
+Out[120]: 3
+
+In [121]: int(second_number)
+Out[121]: 7
+
+In [122]: first_number + second_number
+Out[122]: 10.6386
+
+In [123]: int(first_number + second_number)
+Out[123]: 10
+
+In [124]: first_number = input("enter a number: ")
+enter a number: 10.5
+
+In [125]: second_number = input("enter a second number: ")
+enter a second number: 2
+
+In [126]: first_number + second_number
+Out[126]: '10.52'
+
+In [127]: first_number * second_number
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[127], line 1
+----> 1 first_number * second_number
+
+TypeError: can't multiply sequence by non-int of type 'str'
+
+In [128]: first_number = float(first_number)
+
+In [129]: first_number
+Out[129]: 10.5
+
+In [130]: first_number = int(first_number)
+
+In [131]: first_number
+Out[131]: 10
+
+In [132]: second_number = int(second_number)
+
+In [133]: second_number
+Out[133]: 2
+
+In [134]: first_number * second_number
+Out[134]: 20
+
+In [135]: float('6.2')
+Out[135]: 6.2
+
+In [136]: float('6.2') * 3.3
+Out[136]: 20.46
