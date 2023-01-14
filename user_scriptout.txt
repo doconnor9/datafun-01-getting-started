@@ -1,1 +1,24 @@
 # Paste the output from a sample run here.
+
+Hello
+
+Enter the length of your gymnasts beam routines for further review
+
+Enter the number of seconds of the first gymnasts beam routine: 90
+
+Enter the number of seconds of the second gymnasts beam routine: 84
+
+Enter the number of seconds of the third gymnasts beam routine: 98
+
+The shortest routine was 84.0 seconds
+
+The longest routine was 98.0 seconds
+
+The average beam routine was 90.7 seconds
+
+
+The first gymnast beam routine was within the time limit
+
+The second gymnast beam routine was within the time limit
+
+The third gymnast beam routine was over the time limit
