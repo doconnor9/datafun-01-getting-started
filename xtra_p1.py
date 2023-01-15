@@ -1,5 +1,11 @@
 """
-Optional bonus. See course site for details.
+Diandra O'Connor  1/14/23
+
+This a a game that you play against a gamebot.  Each player (you and the gamebot)
+
+select an animal. The game determines who wins by using if statements based
+
+on specific criteria/characteristics of each animal.
 
 """
 
@@ -44,7 +50,18 @@ print()
 # In Python, indentation is important!
 if user_choice == buddy_choice:
     print("We tied!")
-
+if user_choice == 'wolf' and buddy_choice == 'eagle':
+    print('You win!')
+if user_choice == 'wolf' and buddy_choice == 'snake':
+    print('I win!')
+if user_choice == 'eagle' and buddy_choice == 'wolf':
+    print('I win!')
+if user_choice == 'eagle' and buddy_choice == 'snake':
+    print('You win!')
+if user_choice == 'snake' and buddy_choice == 'wolf':
+    print('You win!')
+if user_choice == 'snake' and buddy_choice == 'eagle':
+    print('I win!')
 
 # When you finish,
 # right-click on the code and select "Format Document"
