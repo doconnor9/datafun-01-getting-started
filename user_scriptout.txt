@@ -10,6 +10,7 @@ Enter the number of seconds of the second gymnasts beam routine: 84
 
 Enter the number of seconds of the third gymnasts beam routine: 98
 
+
 The shortest routine was 84.0 seconds
 
 The longest routine was 98.0 seconds

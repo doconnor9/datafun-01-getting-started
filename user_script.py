@@ -32,6 +32,7 @@ gymnast3_time = float(gymnast3_time)
 # finding the shortest routine
 shortest_beam_routine = min(gymnast1_time, gymnast2_time, gymnast3_time)
 
+print()
 print('The shortest routine was', shortest_beam_routine, 'seconds')
 print()
 
