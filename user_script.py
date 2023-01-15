@@ -1,5 +1,10 @@
 """
-Assessing length of gymnasts beam routines using if statements 
+Assessing length of gymnasts beam routines.
+
+Determines the shortest, longest and average times.
+
+Uses if statements to determine if the routines are within the allowed time limit.
+
 """
 
 print()
